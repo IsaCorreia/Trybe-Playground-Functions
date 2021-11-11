@@ -22,7 +22,6 @@ function splitSentence(text) {
   return(resultado);
 }
 console.log('Desafio 3, splitSentence: ', splitSentence('go Trybe'));
-console.log('Desafio 3, splitSentence: ', splitSentence('Vamo que vamo'));
 
 // Desafio 4
 function concatName(array) {
@@ -38,9 +37,11 @@ let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log('Desafio 4, concatName:', concatName(array));;
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let resultado = (wins*3)+(ties);
+  return(resultado);
 }
+console.log('Desafio 5, footballPoints:', footballPoints(14, 8));
 
 // Desafio 6
 function highestCount() {
