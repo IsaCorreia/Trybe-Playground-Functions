@@ -46,12 +46,22 @@ console.log('Desafio 5, footballPoints:', footballPoints(14, 8));
 // Desafio 6
 function highestCount() {
   // seu código aqui
+  // Vai ser um Bubble Sort
+  // Verificar referência: https://pt.stackoverflow.com/questions/478167/ordenando-arrays-com-bubble-sort
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2) {
+  if(cat1<cat2){
+    return('cat1');
+  }else if(cat2<cat1){
+    return('cat2');
+  }else{
+    return('os gatos trombam e o rato foge')
+  }
 }
+
+console.log('Desafio 7, catAndMouse:', catAndMouse(6, 12));
 
 // Desafio 8
 function fizzBuzz() {
