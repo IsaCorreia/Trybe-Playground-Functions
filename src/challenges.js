@@ -25,9 +25,17 @@ console.log('Desafio 3, splitSentence: ', splitSentence('go Trybe'));
 console.log('Desafio 3, splitSentence: ', splitSentence('Vamo que vamo'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let arrayLastFirst = [];
+  // // ultimo elemento
+  // arrayLastFirst.push(array.pop());
+  // // primeiro elemento
+  // arrayLastFirst.push(array.shift());
+  return(array.pop() + ', ' + array.shift());
 }
+
+let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log('Desafio 4, concatName:', concatName(array));;
 
 // Desafio 5
 function footballPoints() {
