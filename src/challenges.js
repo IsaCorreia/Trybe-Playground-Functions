@@ -6,8 +6,7 @@ function compareTrue(boolOne, boolTwo) {
     return(false);
   }
 }
-console.log(
-  'Desafio 1, comapareTrue:', compareTrue(true, false));
+console.log('Desafio 1, compareTrue:', compareTrue(true, false));
 
 // Desafio 2
 function calcArea(base, height) {
@@ -17,9 +16,13 @@ function calcArea(base, height) {
 console.log('Desafio 2, calcArea:', calcArea(10, 50));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Fonte de pesquisa: https://www.w3schools.com/jsref/jsref_split.asp
+function splitSentence(text) {
+  let resultado = text.split(" ");
+  return(resultado);
 }
+console.log('Desafio 3, splitSentence: ', splitSentence('go Trybe'));
+console.log('Desafio 3, splitSentence: ', splitSentence('Vamo que vamo'));
 
 // Desafio 4
 function concatName() {
