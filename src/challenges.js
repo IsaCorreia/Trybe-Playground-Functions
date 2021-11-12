@@ -39,11 +39,13 @@ function footballPoints(wins, ties) {
 // console.log('Desafio 5, footballPoints:', footballPoints(14, 8));
 
 // Desafio 6
+// Vai ser um Bubble Sort
+// Verificar referência: https://pt.stackoverflow.com/questions/478167/ordenando-arrays-com-bubble-sort
 function highestCount() {
-  // seu código aqui
-  // Vai ser um Bubble Sort
-  // Verificar referência: https://pt.stackoverflow.com/questions/478167/ordenando-arrays-com-bubble-sort
+
 }
+
+
 
 // Desafio 7 
 // Para conseguir a diferença absoluta entre as distâncias, ref:
