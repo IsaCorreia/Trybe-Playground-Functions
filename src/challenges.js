@@ -45,18 +45,24 @@ function highestCount() {
   // Verificar referência: https://pt.stackoverflow.com/questions/478167/ordenando-arrays-com-bubble-sort
 }
 
-// Desafio 7
-function catAndMouse(cat1, cat2) {
-  if(cat1>cat2){
+// Desafio 7 
+// Para conseguir a diferença absoluta entre as distâncias, ref:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+function catAndMouse(mouse, cat1, cat2) {
+
+  let cat1Dist = Math.abs(cat1 - mouse);
+  let cat2Dist = Math.abs(cat2 - mouse);
+
+  if(cat1Dist < cat2Dist){
     return('cat1');
-  }else if(cat2>cat1){
+  }else if(cat2Dist < cat1Dist){
     return('cat2');
   }else{
     return('os gatos trombam e o rato foge')
   }
-}
 
-// console.log('Desafio 7, catAndMouse:', catAndMouse(0, 0));
+}
+// console.log('Desafio 7, catAndMouse:', catAndMouse(0, 3, 12));
 
 // Desafio 8
 function fizzBuzz(array) {
