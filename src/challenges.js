@@ -39,12 +39,28 @@ function footballPoints(wins, ties) {
 // console.log('Desafio 5, footballPoints:', footballPoints(14, 8));
 
 // Desafio 6
-// Vai ser um Bubble Sort
-// Verificar referência: https://pt.stackoverflow.com/questions/478167/ordenando-arrays-com-bubble-sort
-function highestCount() {
+function highestCount(array) {
+
+  let contagem = 0;
+  let temp1 = 0;
+  for(i = 0; i < array.length; i += 1){
+    console.log(array);
+    if(temp1 < array[i]){
+      temp1 = array[i];
+    }
+  }
+
+
+  for(i = 0; i < array.length; i += 1){
+    if(array[i] == temp1){
+      contagem += 1;
+    } 
+  } 
+  return(contagem);
 
 }
 
+console.log( 'Desafio 6, highestCount:', highestCount([-2,-2,-1]));
 
 
 // Desafio 7 
