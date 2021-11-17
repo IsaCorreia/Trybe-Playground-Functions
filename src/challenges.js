@@ -42,17 +42,16 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
 
   let contagem = 0;
-  let temp1 = 0;
+  let temp1 = array[0];
+
   for(i = 0; i < array.length; i += 1){
-    console.log(array);
     if(temp1 < array[i]){
       temp1 = array[i];
     }
   }
 
-
   for(i = 0; i < array.length; i += 1){
-    if(array[i] == temp1){
+    if(array[i] === temp1){
       contagem += 1;
     } 
   } 
@@ -60,7 +59,7 @@ function highestCount(array) {
 
 }
 
-console.log( 'Desafio 6, highestCount:', highestCount([-2,-2,-1]));
+console.log( 'Desafio 6, highestCount:', highestCount([6,-2,-1]));
 
 
 // Desafio 7 
