@@ -17,7 +17,7 @@ function triangleCheck() {
 function hydrate(bebidas) {
 
   // refs:
-  // .exec(): https://www.w3schools.com/jsref/jsref_regexp_exec.asp
+  // Regular Expression: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
   // encontrar match de texto: https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript
   
   // variável dígitos contém um objeto "Regular Expression", utilizado para encontrar padrões em texto.
