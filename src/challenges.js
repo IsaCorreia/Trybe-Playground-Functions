@@ -1,10 +1,14 @@
 // Desafio 1
+
+console.log(compareTrue(1, 1));
 function compareTrue(boolOne, boolTwo) {
-  if(boolOne && boolTwo){
-    return(true);
-  }else{
-    return(false);
-  }
+  // if(boolOne && boolTwo){
+  //   return(true);
+  // }else{
+  //   return(false);
+  // }
+
+  return(boolOne && boolTwo)
 }
 
 // Desafio 2
@@ -133,19 +137,15 @@ function encode(originalMessage) {
 
 }
 
-let encodedMessage = encode('hi there!');
-
-console.log(decode(encodedMessage));
-
+// Basicamente uma cópia do código da função encode. 
+// Mudanças: nomes de variáveis, e a troca de números para vogais
 function decode(message) {
-  //percorrer string, separar cada caractere num array
   let arrayMes = [];
 
   for(let i = 0; i<message.length; i+=1){
     arrayMes = message.split("");
   }
 
-  // comparar cada caractere, substituir vogais por numeros
   for(let i = 0; i<arrayMes.length; i += 1){
     if(arrayMes[i] == '1'){
       arrayMes[i] = 'a';
@@ -160,7 +160,6 @@ function decode(message) {
     }
   }
   
-  // Reconstruir(concatenando) a string a partir do Array já codificado
   let decodedMessage = '';
   for(let i = 0; i<arrayMes.length; i += 1){
     decodedMessage = decodedMessage + arrayMes[i];
