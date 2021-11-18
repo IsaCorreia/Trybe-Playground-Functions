@@ -34,12 +34,16 @@ function hydrate(bebidas) {
     qtdBebidas = qtdBebidas + numBebidasArray[i];
   }
 
-  return(qtdBebidas)
-}
-let string = "1 cerveja, 2 vinho, 3 cachaça";
-console.log('Bem-vindo(a) ao bar da Trybe! Se você vai beber:', string + ', para não ficar com ressaca, você deve beber', hydrate( string ), "copos de água!");
+  if(qtdBebidas > 1){
+    return(qtdBebidas + ' copos de água')
+  }else{
+    return(qtdBebidas + ' copo de água')
 
-;
+  }
+}
+let string = "3 cerveja";
+// console.log('Bem-vindo(a) ao bar da Trybe! Se você vai beber:', string + ', para não ficar com ressaca, você deve beber', hydrate( string ), "copos de água!");
+console.log(hydrate(string));
 
 module.exports = {
   generatePhoneNumber,
