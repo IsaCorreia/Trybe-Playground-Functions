@@ -100,11 +100,72 @@ function fizzBuzz(array) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+function encode(originalMessage) {
+
+  //percorrer string, separar cada caractere num array
+  let arrayOriginMes = [];
+  for(let i = 0; i<originalMessage.length; i+=1){
+    arrayOriginMes = originalMessage.split("");
+  }
+
+  // comparar cada caractere, substituir vogais por numeros
+  for(let i = 0; i<arrayOriginMes.length; i += 1){
+    if(arrayOriginMes[i] == 'a'){
+      arrayOriginMes[i] = '1';
+    }else if(arrayOriginMes[i] == 'e'){
+      arrayOriginMes[i] = '2';
+    }else if(arrayOriginMes[i] == 'i'){
+      arrayOriginMes[i] = '3';
+    }else if(arrayOriginMes[i] == 'o'){
+      arrayOriginMes[i] = '4';
+    }else if(arrayOriginMes[i] == 'u'){
+      arrayOriginMes[i] = '5';
+    }
+  }
+  
+  // Reconstruir(concatenando) a string a partir do Array já codificado
+  let codedMessage = '';
+  for(let i = 0; i<arrayOriginMes.length; i += 1){
+    codedMessage = codedMessage + arrayOriginMes[i];
+  }
+  return(codedMessage);
+
 }
-function decode() {
-  // seu código aqui
+
+let encodedMessage = encode('hi there!');
+
+console.log(decode(encodedMessage));
+
+function decode(message) {
+  //percorrer string, separar cada caractere num array
+  let arrayMes = [];
+
+  for(let i = 0; i<message.length; i+=1){
+    arrayMes = message.split("");
+  }
+
+  // comparar cada caractere, substituir vogais por numeros
+  for(let i = 0; i<arrayMes.length; i += 1){
+    if(arrayMes[i] == '1'){
+      arrayMes[i] = 'a';
+    }else if(arrayMes[i] == '2'){
+      arrayMes[i] = 'e';
+    }else if(arrayMes[i] == '3'){
+      arrayMes[i] = 'i';
+    }else if(arrayMes[i] == '4'){
+      arrayMes[i] = 'o';
+    }else if(arrayMes[i] == '5'){
+      arrayMes[i] = 'u';
+    }
+  }
+  
+  // Reconstruir(concatenando) a string a partir do Array já codificado
+  let decodedMessage = '';
+  for(let i = 0; i<arrayMes.length; i += 1){
+    decodedMessage = decodedMessage + arrayMes[i];
+  }
+  return(decodedMessage);
 }
 
 module.exports = {
@@ -118,4 +179,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-}
+};
