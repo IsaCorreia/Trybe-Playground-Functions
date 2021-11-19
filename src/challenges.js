@@ -55,13 +55,16 @@ function highestCount(array) {
 function catAndMouse(mouse, cat1, cat2) {
   let cat1Dist = Math.abs(cat1 - mouse);
   let cat2Dist = Math.abs(cat2 - mouse);
+  let resultado;
 
   if (cat1Dist < cat2Dist) {
-    return ('cat1');
+    resultado = 'cat1';
   } else if (cat2Dist < cat1Dist) {
-    return ('cat2');
+    resultado = 'cat2';
+  } else {
+    resultado = 'os gatos trombam e o rato foge';
   }
-  return ('os gatos trombam e o rato foge');
+  return resultado;
 }
 
 // Desafio 8
