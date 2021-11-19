@@ -13,9 +13,11 @@ function calcArea(base, height) {
 // Fonte de pesquisa: https://www.w3schools.com/jsref/jsref_split.asp
 function splitSentence(text) {
   // A função .split separa uma string em sub-strings e retorna um array com a string original separada.
-  let resultado = text.split('');
+  let resultado = text.split(' ');
   return (resultado);
 }
+
+console.log(splitSentence('alo alo trybe go'));
 
 // Desafio 4
 function concatName(array) {
